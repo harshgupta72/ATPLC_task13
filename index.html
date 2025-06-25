@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Tasks</title>
+</head>
+<body>
+  <h2>JavaScript Tasks Output -> Check Console</h2>
+  <script>
+
+    let name = "Harsh Kumar";
+    let address = "Patna, Bihar, India";
+    console.log(`1. Name: ${name}`);
+    console.log(`   Address: ${address}\n`);
+
+
+    function isSameValueAndType(a, b) {
+      return a === b;
+    }
+    console.log(`2. isSameValueAndType(5, '5'): ${isSameValueAndType(5, '5')}`);
+    console.log(`   isSameValueAndType(5, 5): ${isSameValueAndType(5, 5)}\n`);
+
+
+    function addStringsUpper(str1, str2) {
+      return (str1 + str2).toUpperCase();
+    }
+    console.log(`3. addStringsUpper('web', 'dev'): ${addStringsUpper('web', 'dev')}\n`);
+
+
+    function stringLengthInBytes(str) {
+      return new TextEncoder().encode(str).length;
+    }
+    console.log(`4. stringLengthInBytes('hello'): ${stringLengthInBytes('hello')} bytes\n`);
+
+
+    function roundToDigits(num, digits) {
+      return Number(num.toFixed(digits));
+    }
+    console.log(`5. roundToDigits(5.55432, 2): ${roundToDigits(5.55432, 2)}`);
+  </script>
+</body>
+</html>
